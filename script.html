@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link  rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="container mt-5 shadow">
+        <h2>Calculator</h2>
+        <form id="calculatorForm" class="mt-3" >
+            <!--First Number-->
+        <div class="mb-3">
+            <label for="val1" class="form-label">Enter first number : </label>
+            <input type="number" class="form-control" id="val1" required>
+        </div>
+
+        <!--Second Number-->
+        <div class="mb-3">
+            <label for="val2" class="form-label">Enter second number : </label>
+            <input type="number" class="form-control" id="val2" required>
+        </div>
+
+        <!--Operator-->
+        <div class="mb-3">
+            <label for="operator" class="form-label">Enter operator(+,-,*,/) : </label>
+            <input type="text" class="form-control" id="operator" required>
+        </div>
+
+        <!--Submit button-->
+        <button id ="calculate" type="submit" class="btn btn-secondary">Calculate</button>
+
+        </form>
+
+        <!--Result-->
+    <div id="result" class="mt-3 shadow"></div>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>
