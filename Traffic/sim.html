@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Simulator</title>
+    <style>
+        #light{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: red;
+            text-align: center;
+            font-size: 20px;
+            line-height: 100px;
+            color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div id="light">Red</div>
+
+    <script>
+        function changeLight(){
+            let currentLight =document.getElementById("light").textContent;
+
+            switch(currentLight){
+                case"Red":
+                document.getElementById("light").textContent="Green";
+                document.getElementById("light").style.backgroundColor="green";
+                break;
+
+                case"Green":
+                document.getElementById("light").textContent="Yellow";
+                document.getElementById("light").style.backgroundColor="yellow";
+                break;
+
+                case"Yellow":
+                document.getElementById("light").textContent="Red";
+                document.getElementById("light").style.backgroundColor="red";
+                break;
+            }
+           
+
+        }
+
+        
+        setTimeout(changeLight,1000);
+    </script>
+</body>
+</html>
