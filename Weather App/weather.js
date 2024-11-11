@@ -32,12 +32,12 @@ function displayWeather(data) {
     const description = data.weather[0].description;
     const cityName = data.name;
 
-    const weatherHtml = `
+    const weatherDisplay = `
         <h2>${cityName}</h2>
         <p>Temperature: ${temperature}°C</p>
         <p>Weather: ${description}</p>
     `;
-    document.getElementById('weatherResult').innerHTML = weatherHtml;
+    document.getElementById('weatherResult').innerHTML = weatherDisplay;
 }
 
 
