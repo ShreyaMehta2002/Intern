@@ -1,0 +1,47 @@
+.container{
+    box-shadow: 0px 0px 15px;
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color:burlywood;
+    width: 500px;
+    
+}
+
+body{
+    background-color: beige;
+    box-shadow: 10rem;
+}
+
+h1{
+    color: wheat;
+    font-family: fantasy;
+    border: #ccc;
+    border-width: 1px;
+}
+.btn{
+    padding: 5px;
+    box-shadow: 0px 0px 10px black;
+    color:darkred;
+    border-color: burlywood;
+    width: 100px;
+    font-family: fantasy;
+    background-color:moccasin;
+}
+
+.btn:hover {
+    background-color: chocolate;
+    border-color: chocolate;
+}
+
+
+#user-profile{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px;
+    font-size: 15px;
+
+}
+
+
